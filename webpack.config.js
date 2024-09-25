@@ -49,6 +49,13 @@ module.exports = (env) => {
     library = 'CheapPolyfill';
     libraryTarget = 'var';
   }
+  else if (env.muxer) {
+    entry = path.resolve(__dirname, './src/export/mux.ts');
+    output = +env.release ? 'mux-min.js' : 'mux.js';
+    library = 'LibMux';
+    libraryExport = 'default';
+    outputPath += '/lib-mux';
+  }
   else {
     return;
   }
