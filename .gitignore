@@ -11,6 +11,7 @@ dist/*
 !dist/resample/
 !dist/scale/
 !dist/stretchpitch/
+!dist/lib-mux/
 
 !dist/avplayer/
 !dist/avplayer-legacy/
